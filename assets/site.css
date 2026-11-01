@@ -100,6 +100,9 @@ h3 { font-size: 20px; margin: 32px 0 8px; }
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
 }
 .shots img:nth-child(2) { transform: translateY(-18px); }
+/* Landscape games (Little Wonders): two wide screenshots instead of three tall ones. */
+.shots.wide img { width: 48%; max-width: 420px; border-radius: 14px; }
+.shots.wide img:nth-child(2) { transform: none; }
 
 .btn {
   display: inline-flex;
