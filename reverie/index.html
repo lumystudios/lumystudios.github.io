@@ -6,9 +6,10 @@
   <title>Reverie — Mahjong Tiles</title>
   <meta name="description" content="Reverie: relaxing mahjong tile matching for iPhone. 200 levels across 20 hand-painted worlds, a daily puzzle and trophies. Support and help.">
   <link rel="icon" href="../assets/reverie-icon.png">
-  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="../assets/site.css?v=4">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="../"><img src="../assets/lumy-logo.png" alt="">Lumy Studios</a>
@@ -19,7 +20,7 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="wrap" id="main">
     <section class="hero">
       <div class="app-head">
         <img src="../assets/reverie-icon.png" alt="Reverie app icon">
@@ -48,7 +49,7 @@
         <div class="feature"><h3>Hard levels</h3><p>Levels grow harder as you go. Every world has hard levels, marked with a flame, that pay bonus stars.</p></div>
         <div class="feature"><h3>Always solvable</h3><p>Every board can be cleared from the start.</p></div>
         <div class="feature"><h3>Daily puzzle</h3><p>The same board for everyone each day, plus stars and trophies to collect.</p></div>
-        <div class="feature"><h3>No account</h3><p>No sign-in. Your progress stays on your device.</p></div>
+        <div class="feature"><h3>No account</h3><p>No sign-in. Your progress stays on your device and in your own iCloud.</p></div>
       </div>
     </section>
 
@@ -72,7 +73,7 @@
       </details>
       <details>
         <summary>How do I move my progress to a new phone?</summary>
-        <p>Progress is saved on your device and moves with an iPhone backup or Quick Start transfer. There is no account, so it can't be synced any other way.</p>
+        <p>If iCloud is on, your levels, stars, points, trophies and daily puzzles follow you to your new phone when you sign in with the same Apple Account. Progress also moves with an iPhone backup or Quick Start transfer. There is no Reverie account to create.</p>
       </details>
       <p>Questions or ideas? <a href="mailto:lumystudios@yahoo.com?subject=Reverie%20support">lumystudios@yahoo.com</a></p>
     </section>
@@ -80,8 +81,41 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>Reverie is developed by Udi Magen.</span>
-      <span><a href="privacy/">Privacy</a> · <a href="../">Lumy Studios</a></span>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="../assets/lumy-logo.png" alt="">Lumy Studios</div>
+          <p>Small apps for iPhone, iPad and Mac.</p>
+        </div>
+        <nav aria-label="Apps">
+          <h2>Apps</h2>
+          <ul>
+            <li><a href="../pencilpop/">PencilPop</a></li>
+            <li><a href="../reverie/">Reverie</a></li>
+            <li><a href="../littlewonders/">Little Wonders</a></li>
+            <li><a href="../starling/">Starling</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <h2>Help</h2>
+          <ul>
+            <li><a href="../#support">Support</a></li>
+            <li><a href="mailto:lumystudios@yahoo.com">lumystudios@yahoo.com</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="../privacy/">Website privacy</a></li>
+            <li><a href="../terms/">Terms of use</a></li>
+            <li><a href="../legal/">Legal notice</a></li>
+            <li><a href="../legal/#accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <p>© 2026 Udi Magen. All apps on this site are developed and published by Udi Magen.</p>
+        <p>Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc. Google AdMob is a trademark of Google LLC.</p>
+      </div>
     </div>
   </footer>
 </body>

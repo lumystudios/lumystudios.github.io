@@ -4,120 +4,256 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lumy Studios</title>
-  <meta name="description" content="Lumy Studios makes small, polished apps and games.">
+  <meta name="description" content="Calm games and quiet tools for iPhone, iPad and Mac: PencilPop, Reverie, Little Wonders and Starling.">
+  <meta name="theme-color" content="#f1eef8">
   <link rel="icon" href="assets/lumy-logo.png">
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="preload" href="assets/fonts/YoungSerif-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/vendor/lenis.css">
+  <link rel="stylesheet" href="assets/site.css?v=4">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="./"><img src="assets/lumy-logo.png" alt="">Lumy Studios</a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main">
         <a href="#apps">Apps</a>
-        <a href="mailto:lumystudios@yahoo.com">Contact</a>
+        <a href="#support">Support</a>
+        <a class="hide-sm" href="mailto:lumystudios@yahoo.com">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
-      <span class="eyebrow">Independent app studio</span>
-      <h1>Small apps, <span class="gradient-text">made with care.</span></h1>
-      <p>We build calm, polished apps and games for iPhone, iPad, and Mac: simple to pick up, and nice to come back to.</p>
-    </section>
+  <div class="page">
+    <svg class="ribbon" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="ribbon-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1600" spreadMethod="reflect">
+          <stop offset="0" stop-color="#8a3fea"/>
+          <stop offset="0.5" stop-color="#e64c8e"/>
+          <stop offset="1" stop-color="#ff8a3d"/>
+        </linearGradient>
+        <linearGradient id="hero-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
+          <stop offset="0" stop-color="#8a3fea"/>
+          <stop offset="0.55" stop-color="#e64c8e"/>
+          <stop offset="1" stop-color="#ff8a3d"/>
+        </linearGradient>
+      </defs>
+      <g class="hero-part"><path class="band"/><path class="shine"/></g>
+      <g class="spine-part"><path class="band"/><path class="shine"/></g>
+    </svg>
 
-    <section id="apps">
-      <h2>Our apps</h2>
-      <article class="app-card">
-        <div>
-          <div class="app-head">
-            <img src="assets/pencilpop-icon.png" alt="PencilPop app icon">
-            <div>
-              <h3>PencilPop</h3>
-              <span>Color by Number · iPhone &amp; iPad</span>
-            </div>
-          </div>
-          <p>Relaxing color by number for the whole family. 125 pictures on four levels, from simple
-            scenes to detailed paintings and calming mandalas, with a Magic Wand and timelapse videos.</p>
-          <div class="btn-row">
-            <a class="btn" href="pencilpop/">Learn more</a>
-            <span class="pill">Coming soon to the App Store</span>
-          </div>
+    <main id="main">
+      <section class="home-hero">
+        <div class="wrap">
+          <h1>Calm games and quiet tools for iPhone, iPad and Mac.</h1>
+          <p class="lede">Coloring, mahjong, a cozy match-3 and a clipboard manager. You never need an account with us, and every app has a privacy policy written in plain words.</p>
+          <ul class="app-jump" aria-label="Our apps">
+            <li><a href="#pencilpop"><img src="assets/pencilpop-icon.png" alt="">PencilPop</a></li>
+            <li><a href="#reverie"><img src="assets/reverie-icon.png" alt="">Reverie</a></li>
+            <li><a href="#littlewonders"><img src="assets/littlewonders-icon.png" alt="">Little Wonders</a></li>
+            <li><a href="#starling"><img src="assets/starling-icon.png" alt="">Starling</a></li>
+          </ul>
         </div>
-        <div class="shots">
-          <img src="assets/pencilpop-1-gallery.jpg" alt="PencilPop gallery of Hard paintings">
-          <img src="assets/pencilpop-2-coloring.jpg" alt="Coloring the Stained Glass Owl">
-          <img src="assets/pencilpop-6-celebration.jpg" alt="A finished Dragon Library painting">
-        </div>
-      </article>
-      <article class="app-card">
-        <div>
-          <div class="app-head">
-            <img src="assets/reverie-icon.png" alt="Reverie app icon">
-            <div>
-              <h3>Reverie</h3>
-              <span>Mahjong Tiles · iPhone</span>
-            </div>
-          </div>
-          <p>Calm mahjong tile matching on a journey through twenty hand-painted worlds. 200 levels,
-            hard levels in every world, a daily puzzle and trophies to collect.</p>
-          <div class="btn-row">
-            <a class="btn" href="reverie/">Learn more</a>
-            <span class="pill">Coming soon to the App Store</span>
-          </div>
-        </div>
-        <div class="shots">
-          <img src="assets/reverie-1-board.jpg" alt="A Reverie board in the Night Orbit world">
-          <img src="assets/reverie-2-journey.jpg" alt="The fox on the Reverie journey map">
-          <img src="assets/reverie-4-stars.jpg" alt="Level cleared with three stars">
-        </div>
-      </article>
-      <article class="app-card">
-        <div>
-          <div class="app-head">
-            <img src="assets/littlewonders-icon.png" alt="Little Wonders app icon">
-            <div>
-              <h3>Little Wonders</h3>
-              <span>Match &amp; Build · iPhone</span>
-            </div>
-          </div>
-          <p>A cozy match-3 puzzle game. Win stars to build six tiny worlds, from a lighthouse in a
-            bottle to a storybook woodland. 180 levels, with a shark and a fishing line to help.</p>
-          <div class="btn-row">
-            <a class="btn" href="littlewonders/">Learn more</a>
-            <span class="pill">Coming soon to the App Store</span>
-          </div>
-        </div>
-        <div class="shots wide">
-          <img src="assets/littlewonders-1-home.jpg" alt="The Little Wonders Coastal Bottle world">
-          <img src="assets/littlewonders-2-board.jpg" alt="A Little Wonders puzzle board">
-        </div>
-      </article>
+      </section>
 
-      <article class="app-card">
-        <div>
-          <div class="app-head">
-            <img src="assets/starling-icon.png" alt="Starling app icon">
-            <div>
-              <h3>Starling</h3>
-              <span>Clipboard Manager · Mac</span>
+      <div id="apps">
+        <section class="world pp" id="pencilpop" aria-labelledby="pp-title">
+          <div class="wrap">
+            <div class="copy">
+              <img class="world-icon" src="assets/pencilpop-icon.png" alt="PencilPop app icon">
+              <h2 id="pp-title">PencilPop</h2>
+              <p class="kind">Color by number for iPhone and iPad</p>
+              <p>Match the numbers, fill the shapes and watch a picture come to life, one relaxing tap at a time.</p>
+              <ul class="facts">
+                <li>125 pictures on four levels, from simple scenes to mandalas</li>
+                <li>A Magic Wand that fills a whole area at once</li>
+                <li>Timelapse videos of every finished picture</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn" href="pencilpop/">See PencilPop</a>
+                <span class="pill">Coming soon to the App Store</span>
+              </div>
+            </div>
+            <div class="shots">
+              <img src="assets/pencilpop-1-gallery.jpg" alt="PencilPop gallery of Hard paintings" width="506" height="1100" loading="lazy">
+              <img src="assets/pencilpop-2-coloring.jpg" alt="Coloring the Stained Glass Owl" width="506" height="1100" loading="lazy">
+              <img src="assets/pencilpop-6-celebration.jpg" alt="A finished Dragon Library painting" width="506" height="1100" loading="lazy">
             </div>
           </div>
-          <p>A lightweight clipboard manager that lives in your menu bar. Everything you copy is saved automatically — text, images, and code — and a single keystroke brings it all back.</p>
-          <div class="btn-row">
-            <a class="btn" href="starling/">Learn more</a>
-            <span class="pill">Coming soon to the Mac App Store</span>
+        </section>
+
+        <section class="world rv" id="reverie" aria-labelledby="rv-title">
+          <div class="wrap">
+            <div class="copy">
+              <img class="world-icon" src="assets/reverie-icon.png" alt="Reverie app icon">
+              <h2 id="rv-title">Reverie</h2>
+              <p class="kind">Mahjong tiles for iPhone</p>
+              <p>Calm tile matching on a journey through twenty hand-painted worlds.</p>
+              <ul class="facts">
+                <li>200 levels, with hard levels in every world</li>
+                <li>Every board can be cleared from the start</li>
+                <li>A daily puzzle and trophies to collect</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn" href="reverie/">See Reverie</a>
+                <span class="pill">Coming soon to the App Store</span>
+              </div>
+            </div>
+            <div class="shots">
+              <img src="assets/reverie-1-board.jpg" alt="A Reverie board in the Night Orbit world" width="600" height="1303" loading="lazy">
+              <img src="assets/reverie-2-journey.jpg" alt="The fox on the Reverie journey map" width="600" height="1303" loading="lazy">
+              <img src="assets/reverie-4-stars.jpg" alt="Level cleared with three stars" width="600" height="1303" loading="lazy">
+            </div>
           </div>
+        </section>
+
+        <section class="world lw" id="littlewonders" aria-labelledby="lw-title">
+          <div class="wrap">
+            <div class="copy">
+              <div>
+                <img class="world-icon" src="assets/littlewonders-icon.png" alt="Little Wonders app icon">
+                <h2 id="lw-title">Little Wonders</h2>
+                <p class="kind">Match and build for iPhone</p>
+                <p>A cozy match-3 puzzle game. Win stars to build six tiny worlds, from a lighthouse in a bottle to a storybook woodland.</p>
+              </div>
+              <div>
+                <ul class="facts">
+                  <li>180 levels across six little worlds</li>
+                  <li>A shark that clears a row, a fishing line that clears a column</li>
+                  <li>No ads between levels, only videos you choose</li>
+                </ul>
+                <div class="btn-row">
+                  <a class="btn" href="littlewonders/">See Little Wonders</a>
+                  <span class="pill">Coming soon to the App Store</span>
+                </div>
+              </div>
+            </div>
+            <div class="shots wide">
+              <img src="assets/littlewonders-1-home.jpg" alt="The Little Wonders Coastal Bottle world" width="1200" height="552" loading="lazy">
+              <img src="assets/littlewonders-2-board.jpg" alt="A Little Wonders puzzle board" width="1200" height="552" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <section class="world st" id="starling" aria-labelledby="st-title">
+          <div class="wrap">
+            <div class="copy">
+              <img class="world-icon" src="assets/starling-icon.png" alt="Starling app icon">
+              <h2 id="st-title">Starling</h2>
+              <p class="kind">Clipboard manager for Mac</p>
+              <p>Everything you copy is saved in your menu bar: text, images and code, a keystroke away.</p>
+              <ul class="facts">
+                <li>Search and label your clipboard history</li>
+                <li>Passwords and API keys are left out automatically</li>
+                <li>Nothing leaves your Mac</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn" href="starling/">See Starling</a>
+                <span class="pill">Coming soon to the Mac App Store</span>
+              </div>
+            </div>
+            <div>
+              <div class="keys" aria-hidden="true"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>V</kbd></div>
+              <p class="keys-caption">Command-Shift-V opens your history. You can change the shortcut.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="glance" id="support" aria-labelledby="glance-title">
+        <div class="wrap">
+          <h2 id="glance-title">Help, privacy and ads at a glance</h2>
+          <p class="intro">What each app shows you and what leaves your device. Each privacy policy has the full details.</p>
+          <div class="table-scroll" tabindex="0" role="region" aria-labelledby="glance-title">
+            <table>
+              <thead>
+                <tr><th scope="col">App</th><th scope="col">Runs on</th><th scope="col">Ads</th><th scope="col">What leaves your device</th><th scope="col">Help</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><img src="assets/pencilpop-icon.png" alt="">PencilPop</th>
+                  <td data-label="Runs on">iPhone, iPad</td>
+                  <td data-label="Ads">Short ads from Google AdMob, not personalized. A one-time purchase turns them off.</td>
+                  <td data-label="What leaves your device">Technical data Google needs to show ads. No tracking.</td>
+                  <td data-label="Help"><a href="pencilpop/#support">Support</a><br><a href="pencilpop/privacy/">Privacy policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="assets/reverie-icon.png" alt="">Reverie</th>
+                  <td data-label="Runs on">iPhone</td>
+                  <td data-label="Ads">None in the first 10 levels, then before every third level. A one-time purchase turns them off.</td>
+                  <td data-label="What leaves your device">Ad data for Google, personalized only if you allow tracking. Progress in your own iCloud and Game Center, if you use them.</td>
+                  <td data-label="Help"><a href="reverie/#support">Support</a><br><a href="reverie/privacy/">Privacy policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="assets/littlewonders-icon.png" alt="">Little Wonders</th>
+                  <td data-label="Runs on">iPhone</td>
+                  <td data-label="Ads">Only videos you choose to watch for a gift.</td>
+                  <td data-label="What leaves your device">Technical data Google needs to show those videos. No tracking.</td>
+                  <td data-label="Help"><a href="littlewonders/#support">Support</a><br><a href="littlewonders/privacy/">Privacy policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><img src="assets/starling-icon.png" alt="">Starling</th>
+                  <td data-label="Runs on">Mac</td>
+                  <td data-label="Ads">None</td>
+                  <td data-label="What leaves your device">Nothing. The app makes no network requests.</td>
+                  <td data-label="Help"><a href="starling/#support">Support</a><br><a href="starling/privacy/">Privacy policy</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">None of our apps needs an account. In-app purchases are handled by Apple, and we never see payment details.</p>
+          <p class="contact-line">Still stuck? Email <a href="mailto:lumystudios@yahoo.com">lumystudios@yahoo.com</a> and tell us which app you're using.</p>
         </div>
-      </article>
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>© 2026 Lumy Studios</span>
-      <span><a href="pencilpop/privacy/">PencilPop privacy</a> · <a href="reverie/privacy/">Reverie privacy</a> · <a href="littlewonders/privacy/">Little Wonders privacy</a> · <a href="starling/privacy/">Starling privacy</a> · <a href="mailto:lumystudios@yahoo.com">lumystudios@yahoo.com</a></span>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><img src="assets/lumy-logo.png" alt="">Lumy Studios</div>
+          <p>Small apps for iPhone, iPad and Mac.</p>
+        </div>
+        <nav aria-label="Apps">
+          <h2>Apps</h2>
+          <ul>
+            <li><a href="pencilpop/">PencilPop</a></li>
+            <li><a href="reverie/">Reverie</a></li>
+            <li><a href="littlewonders/">Little Wonders</a></li>
+            <li><a href="starling/">Starling</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Help">
+          <h2>Help</h2>
+          <ul>
+            <li><a href="#support">Support</a></li>
+            <li><a href="mailto:lumystudios@yahoo.com">lumystudios@yahoo.com</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="privacy/">Website privacy</a></li>
+            <li><a href="terms/">Terms of use</a></li>
+            <li><a href="legal/">Legal notice</a></li>
+            <li><a href="legal/#accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <p>© 2026 Udi Magen. All apps on this site are developed and published by Udi Magen.</p>
+        <p>Apple, iPhone, iPad, Mac and App Store are trademarks of Apple Inc. Google AdMob is a trademark of Google LLC.</p>
+      </div>
     </div>
   </footer>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/SplitText.min.js" defer></script>
+  <script src="assets/vendor/DrawSVGPlugin.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/home.js?v=3" defer></script>
 </body>
 </html>
