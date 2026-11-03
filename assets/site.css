@@ -284,3 +284,10 @@ html.js .home-hero h1 { opacity: 0; animation: show-anyway 0s 2.5s forwards; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
   html.js .home-hero h1 { opacity: 1; }
 }
+
+/* Official "Download on the App Store" badge (Apple artwork, unmodified). */
+.store-badge { display: inline-flex; border-radius: 10px; line-height: 0; transition: transform 0.15s ease; }
+.store-badge:hover { transform: translateY(-1px); }
+.store-badge img { display: block; height: 50px; width: auto; }
+.hero .store-badge img { height: 55px; }
+.world .btn.ghost { background: transparent; color: inherit; }
